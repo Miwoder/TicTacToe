@@ -25,6 +25,7 @@ public class Main {
             }
         }
 
+
         switch (variant) {
             case 1:
                 System.out.println("Game mode - singleplayer");
@@ -33,11 +34,12 @@ public class Main {
             case 2:
                 System.out.println("Game mode - multiplayer");
                 TicTacToeMultiplayer multiplayer = new TicTacToeMultiplayer();
-                char [][] field = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
-                multiplayer.drawField(field);
+                multiplayer.drawField(multiplayer.getField());
+
                 break;
             default:
                 System.out.println("Please, select 1 or 2");
+                break;
             }
 
     }

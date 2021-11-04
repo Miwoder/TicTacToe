@@ -1,6 +1,7 @@
 package Game;
 
 public interface Gamable {
-    Boolean isLost();
+    Boolean isGameOver();
     void drawField(char[][] field);
+    void putSymbol(char[][] field, char symbol);
 }
