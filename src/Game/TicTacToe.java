@@ -48,6 +48,7 @@ public class TicTacToe{
                 multiplayer.checkPlayAgain();
                 break;
             case 3 :
+                scanner.close();
                 break;
             default:
                 System.out.println("Please, select 1 or 2");
